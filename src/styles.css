@@ -1,0 +1,54 @@
+/* Tombol play tengah */
+
+.plyr__control--overlaid {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .plyr__control--overlaid::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("assets/images/icons/play-button.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 834px) {
+    .plyr__control--overlaid::before {
+        width: 70px;
+        height: 70px;
+    }
+}
+  
+  .plyr button[data-plyr="play"] svg {
+    display: none;
+  }
+  
+  /* VOLUME */
+  
+  .plyr__controls button[data-plyr="mute"]:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+  
+  
+  /* FULLSCREEN */
+  
+  .plyr__controls button[data-plyr="fullscreen"]:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+  
+  /* POSTER VIDEO */
+  
+  .plyr__poster {
+    background-image: url("assets/images/thumbnails/thumbnail-video.png") !important;
+    background-size: cover !important;
+    background-position: center;
+  }
